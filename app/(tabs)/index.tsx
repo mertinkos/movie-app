@@ -1,13 +1,12 @@
-import "../global.css";
-import { ActivityIndicator, FlatList, Image, ScrollView, Text, View } from "react-native";
-import { Link } from "expo-router";
-import { images } from "@/constants/images";
-import { icons } from "@/constants/icons";
-import SearchBar from "@/components/searchbar";
-import { useRouter } from "expo-router";
-import useFetch from "@/services/useFetch";
-import {fetchMovies} from "@/services/api";
 import MovieCard from "@/components/moviecard";
+import SearchBar from "@/components/searchbar";
+import { icons } from "@/constants/icons";
+import { images } from "@/constants/images";
+import { fetchMovies } from "@/services/api";
+import useFetch from "@/services/useFetch";
+import { useRouter } from "expo-router";
+import { ActivityIndicator, FlatList, Image, ScrollView, Text, View } from "react-native";
+import "../global.css";
 
 
 export default function Index() {
